@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Галерея из Ботв</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ШАПКА -->
+  <header class="site-header">
+    <h1 class="site-title">Моя небольшая игровая галерея из серии игр легенд о зельде Ботв и Тотк, воть</h1>
+    <nav>
+      <ul class="nav">
+        <li><a href="#" class="tab-btn active" data-tab="main">Главная</a></li>
+        <li><a href="#" class="tab-btn" data-tab="battle">Вести с полей</a></li>
+        <li><a href="#" class="tab-btn" data-tab="recipes">Лучшие рецепты</a></li>
+        <li><a href="#" class="tab-btn" data-tab="campfire">Посиделки в лесу</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- КОНТЕНТ -->
+  <main>
+    <!-- Главная -->
+    <section class="tab-content active" id="main">
+      <h2>Привет!</h2>
+      <p>Это моя личная подборка моментов и шедевров из игры.</p>
+      </div>
+        <div class="gallery-item">
+          <img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070701390000-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 2" data-caption="Описание второго фото">
+    </section>
+
+    <!-- Вести с полей -->
+    <section class="tab-content" id="battle">
+      <h2>Вести с полей</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025071102393900-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 1" data-caption="Очередной убитый страж">
+        </div>
+        <div class="gallery-item">
+          <img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025071102342000-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 2" data-caption="Охота на стражей с луком света">
+        </div>
+        <div class="gallery-item">
+          <img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025062601173200-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 3" data-caption="...">
+        </div>
+        <div class="gallery-item">
+          <img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025062106311800-CC47F0DEC75C1FD3B1F95FA9F9D57667.jpg" alt="Фото 4" data-caption="Просто катаюсь на драконе">
+        </div>
+      </div>
+    </section>
+
+    <!-- Лучшие рецепты -->
+    <section class="tab-content" id="recipes">
+      <h2>Лучшие рецепты</h2>
+      <div class="gallery">
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025071103084700-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 1" data-caption="Креп с медом"></div>
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070900022100-CC47F0DEC75C1FD3B1F95FA9F9D57667.jpg" alt="Фото 2" data-caption="Яблочный пирог"></div>
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070815592400-CC47F0DEC75C1FD3B1F95FA9F9D57667.jpg" alt="Фото 3" data-caption="Пицца с помидорами"></div>
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070816291900-CC47F0DEC75C1FD3B1F95FA9F9D57667.jpg" alt="Фото 4" data-caption="Каша с грибами"></div>
+      </div>
+    </section>
+
+    <!-- Посиделки в лесу -->
+    <section class="tab-content" id="campfire">
+      <h2>Посиделки в лесу</h2>
+      <div class="gallery">
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070900222100-CC47F0DEC75C1FD3B1F95FA9F9D57667.jpg" alt="Фото 1" data-caption="Я в дереве"></div>
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070801242900-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 2" data-caption="Сидим с другом"></div>
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070801235900-F1C11A22FAEE3B82F21B330E1B786A39.jpg" alt="Фото 3" data-caption="Корок отдыхает"></div>
+        <div class="gallery-item"><img src="https://uploads.onecompiler.io/43n9hghfn/43pwjhy89/2025070900191400-CC47F0DEC75C1FD3B1F95FA9F9D57667.jpg" alt="Фото 4" data-caption="Посиделки в лесу"></div>
+      </div>
+    </section>
+  </main>
+
+ <!-- МОДАЛЬНОЕ ОКНО -->
+<div class="modal" id="imageModal">
+  <span class="modal-close" id="modalClose">&times;</span>
+  
+  <img class="modal-content" id="modalImg" src="#" alt="Изображение">
+  
+  <!-- Обёртка для подписи и счётчика -->
+  <div class="modal-description">
+    <p class="modal-caption" id="modalCaption"></p>
+    <p class="modal-counter" id="modalCounter"></p>
+  </div>
+
+  <!-- Стрелки -->
+  <button class="modal-arrow left" id="prevImg">&#8592;</button>
+  <button class="modal-arrow right" id="nextImg">&#8594;</button>
+</div>
+
+
+  <!-- ПОДВАЛ -->
+  <footer class="site-footer">
+    <p>Здесь пока пусто, но для обычной галереи здесь ничего быть и не должно</p>
+  </footer>
+
+  <!-- СКРИПТ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
